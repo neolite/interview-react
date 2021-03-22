@@ -14,9 +14,6 @@ const App = () => {
           <Route path="/stubs/lists" component={Lists} />
         </Switch>
       </Router>
-      {/* <div className="app">
-        <Form />
-      </div> */}
     </Provider>
   );
 };
