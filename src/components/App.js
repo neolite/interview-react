@@ -1,7 +1,6 @@
 import { Provider } from 'react-redux';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
-import Form from './Form';
 import Lists from '../stubs/Lists';
 import store from '../store/store';
 
