@@ -5,6 +5,8 @@ import App from './components/App';
 
 import reportWebVitals from './reportWebVitals';
 
+import './assets/style.scss';
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
