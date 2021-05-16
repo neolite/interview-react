@@ -14,11 +14,11 @@ jobs:
       - name: Install nvm
         run: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
       - name: Setup shell
-        run: [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+        run: export NVM_DIR="$HOME/.nvm" && . "$NVM_DIR/nvm.sh" --no-use
+        
       - name: Install Node.js
-        env:
-          NODE_VERSION: 14.17.0
-        run: nvm install $NODE_VERSION
+
+        run: eval "[ -f .nvmrc ] && nvm install
       - name: Install Yarn
         run: npm install -g yarn
       - name: Install dependencies
