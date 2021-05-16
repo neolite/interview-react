@@ -18,7 +18,7 @@ jobs:
         
       - name: Install Node.js
 
-        run: eval "[ -f .nvmrc ] && nvm install"
+        run: nvm install"
       - name: Install Yarn
         run: npm install -g yarn
       - name: Install dependencies
